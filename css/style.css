@@ -1400,3 +1400,6 @@ a { text-decoration: none; color: inherit; }
   .cta-button { padding: 18px 24px; gap: 10px; }
   .cta-btn-icon, .cta-btn-arrow { display: none; }
 }
+.text-testimonials {
+  margin-bottom: 60px;
+}
