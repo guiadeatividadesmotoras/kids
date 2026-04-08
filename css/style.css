@@ -1403,3 +1403,7 @@ a { text-decoration: none; color: inherit; }
 .text-testimonials {
   margin-bottom: 60px;
 }
+
+.testimonial-name {
+  margin-bottom: 30px;
+}
