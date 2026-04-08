@@ -1400,10 +1400,7 @@ a { text-decoration: none; color: inherit; }
   .cta-button { padding: 18px 24px; gap: 10px; }
   .cta-btn-icon, .cta-btn-arrow { display: none; }
 }
-.text-testimonials {
-  margin-bottom: 60px;
-}
-
 .testimonial-name {
-  margin-bottom: 30px;
+  display: block;
+  margin-bottom: 50px !important;
 }
