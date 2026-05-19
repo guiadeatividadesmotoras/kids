@@ -1404,3 +1404,40 @@ a { text-decoration: none; color: inherit; }
   display: block;
   margin-bottom: 90px !important;
 }
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.pain-card {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  color: white;
+  padding: 28px 24px;
+  border-radius: 22px;
+  font-size: 1.08em;
+  line-height: 1.7;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(255, 95, 109, 0.25);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.pain-card::before {
+  content: "“";
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  font-size: 5em;
+  opacity: 0.12;
+  font-family: serif;
+}
+
+.pain-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(255, 95, 109, 0.35);
+}
