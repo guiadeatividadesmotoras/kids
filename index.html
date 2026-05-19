@@ -64,115 +64,289 @@
   </section>
 
   <!-- ===================== IDENTIFICAÇÃO / DOR ===================== -->
-  <section class="pain-section" id="identificacao">
+  <!-- ===================== IDENTIFICAÇÃO / DOR ===================== -->
+<section class="pain-section" id="identificacao">
   <div class="container">
+
     <div class="section-tag">
-      <i class="fas fa-heart-broken"></i> VOCÊ SE IDENTIFICA?
+      <i class="fas fa-heart-broken"></i>
+      VOCÊ SE IDENTIFICA?
     </div>
-    
-    <h2 style="text-align:center; font-size:2.3em; line-height:1.3;">
+
+    <h2 class="pain-title">
       “Será que sou uma péssima mãe por não conseguir ajudar meu filho a se concentrar?”
     </h2>
 
-    <p style="text-align:center; font-size:1.3em; max-width:900px; margin:30px auto;">
+    <p class="pain-subtitle">
       Esses pensamentos não te deixam em paz, né?
     </p>
 
-    <!-- Imagem -->
-    <div style="text-align:center; margin:40px 0;">
-      <img src="https://raw.githubusercontent.com/guiadeatividadesmotoras/kids/main/ChatGPT%20Image%2019%20de%20mai.%20de%202026%2C%2016_23_23.png" 
-           alt="Antes e Depois" 
-           style="max-width:85%; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,0.15);">
-      
-      <p style="margin-top:15px; font-style:italic; color:#666; font-size:1.05em;">
+    <!-- IMAGEM -->
+    <div class="pain-image-box">
+      <img 
+        src="https://raw.githubusercontent.com/guiadeatividadesmotoras/kids/main/ChatGPT%20Image%2019%20de%20mai.%20de%202026%2C%2016_23_23.png"
+        alt="Antes e Depois"
+        class="pain-image"
+      >
+
+      <p class="pain-image-text">
         De um lado: você exausta, brigando e sem paciência.<br>
-        Do outro: você tranquila, orgulhosa e com seu filho focado
+        Do outro: você tranquila, orgulhosa e com seu filho focado.
       </p>
     </div>
 
-    <!-- Cards -->
-    <div class="pain-grid" style="
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap:25px;
-      margin-top:50px;
-    ">
+    <!-- CARDS -->
+    <div class="pain-grid">
 
-      <div class="pain-card" style="
-        background:#fff;
-        padding:28px;
-        border-radius:22px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
-        border:2px solid #ffe3ea;
-        font-size:1.08em;
-        line-height:1.7;
-      ">
-        “Sou uma mãe ruim… meu filho não consegue terminar nada sem desistir.”
+      <div class="pain-card">
+        <span>“Sou uma mãe ruim… meu filho não consegue terminar nada sem desistir.”</span>
       </div>
 
-      <div class="pain-card" style="
-        background:#fff;
-        padding:28px;
-        border-radius:22px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
-        border:2px solid #ffe3ea;
-        font-size:1.08em;
-        line-height:1.7;
-      ">
-        “As outras crianças da idade dele são tão mais adiantadas… o que eu estou fazendo de errado?”
+      <div class="pain-card">
+        <span>“As outras crianças da idade dele são tão mais adiantadas… o que eu estou fazendo de errado?”</span>
       </div>
 
-      <div class="pain-card" style="
-        background:#fff;
-        padding:28px;
-        border-radius:22px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
-        border:2px solid #ffe3ea;
-        font-size:1.08em;
-        line-height:1.7;
-      ">
-        “Ele vive no celular e eu não consigo tirar. Me sinto completamente impotente.”
+      <div class="pain-card">
+        <span>“Ele vive no celular e eu não consigo tirar. Me sinto completamente impotente.”</span>
       </div>
 
-      <div class="pain-card" style="
-        background:#fff;
-        padding:28px;
-        border-radius:22px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
-        border:2px solid #ffe3ea;
-        font-size:1.08em;
-        line-height:1.7;
-      ">
-        “Tenho medo do futuro dele… e se ele ficar para trás na escola para sempre?”
+      <div class="pain-card">
+        <span>“Tenho medo do futuro dele… e se ele ficar para trás na escola para sempre?”</span>
       </div>
 
-      <div class="pain-card" style="
-        background:#fff;
-        padding:28px;
-        border-radius:22px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
-        border:2px solid #ffe3ea;
-        font-size:1.08em;
-        line-height:1.7;
-      ">
-        “Já gritei, já implorei, já tentei de tudo… e nada muda. Isso está acabando comigo.”
+      <div class="pain-card">
+        <span>“Já gritei, já implorei, já tentei de tudo… e nada muda. Isso está acabando comigo.”</span>
       </div>
 
-      <div class="pain-card" style="
-        background:#fff;
-        padding:28px;
-        border-radius:22px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.08);
-        border:2px solid #ffe3ea;
-        font-size:1.08em;
-        line-height:1.7;
-      ">
-        “Será que essa dificuldade é culpa minha? Será que eu não estimulei ele o suficiente?”
+      <div class="pain-card">
+        <span>“Será que essa dificuldade é culpa minha? Será que eu não estimulei ele o suficiente?”</span>
       </div>
 
     </div>
   </div>
 </section>
+
+<style>
+
+/* =========================================
+   CORRIGE ARRASTAR PARA OS LADOS
+========================================= */
+html, body{
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+.pain-section{
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fff7f9 0%, #ffffff 100%);
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   TAG
+========================================= */
+.section-tag{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffe3ea;
+  color: #ff4d7a;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 800;
+  margin: 0 auto 30px auto;
+  font-size: 14px;
+}
+
+.section-tag i{
+  font-size: 16px;
+}
+
+/* =========================================
+   TITULOS
+========================================= */
+.pain-title{
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.35;
+  font-weight: 900;
+  color: #222;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.pain-subtitle{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 25px auto 0 auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   IMAGEM
+========================================= */
+.pain-image-box{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pain-image{
+  width: 100%;
+  max-width: 850px;
+  border-radius: 24px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.pain-image-text{
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+/* =========================================
+   GRID
+========================================= */
+.pain-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+.pain-card{
+  position: relative;
+  padding: 30px 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  color: white;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #ff5f8f 0%, #ff3366 100%);
+
+  box-shadow:
+    0 15px 35px rgba(255, 51, 102, 0.25),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+
+  transition: 0.3s ease;
+}
+
+.pain-card::before{
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 50%;
+}
+
+.pain-card:hover{
+  transform: translateY(-5px);
+  box-shadow:
+    0 20px 40px rgba(255, 51, 102, 0.35),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.pain-card span{
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+@media(max-width: 992px){
+
+  .pain-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pain-title{
+    font-size: 2rem;
+  }
+
+}
+
+/* =========================================
+   CELULAR
+========================================= */
+@media(max-width: 768px){
+
+  .pain-section{
+    padding: 60px 16px;
+  }
+
+  .pain-title{
+    font-size: 1.6rem;
+    line-height: 1.45;
+  }
+
+  .pain-subtitle{
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .pain-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .pain-card{
+    padding: 24px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+
+  .pain-image{
+    max-width: 100%;
+    border-radius: 18px;
+  }
+
+  .pain-image-text{
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+}
+
+/* =========================================
+   CELULAR PEQUENO
+========================================= */
+@media(max-width: 480px){
+
+  .pain-title{
+    font-size: 1.4rem;
+  }
+
+  .pain-card{
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+}
+
+</style>
 
   <!-- ===================== AGRAVAÇÃO ===================== -->
   <section class="agravation-section" id="agravacao">
