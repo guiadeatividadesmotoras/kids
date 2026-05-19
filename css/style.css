@@ -1610,14 +1610,12 @@ a { text-decoration: none; color: inherit; }
 
   /* IMAGEM MAIOR NO CELULAR */
   .pain-image{
-    width: 118%;
-    max-width: 118%;
+  width: calc(100% + 32px);
+  max-width: calc(100% + 32px);
 
-    margin-left: -9%;
+  margin-left: -16px;
 
-    border-radius: 18px;
-  }
-
+  border-radius: 18px;
 }
 
 /* =========================================
@@ -1635,10 +1633,10 @@ a { text-decoration: none; color: inherit; }
   }
 
   .pain-image{
-    width: 122%;
-    max-width: 122%;
+  width: calc(100% + 32px);
+  max-width: calc(100% + 32px);
 
-    margin-left: -11%;
-  }
+  margin-left: -16px;
 
+  border-radius: 18px;
 }
