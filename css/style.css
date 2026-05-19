@@ -1354,118 +1354,291 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* =========================================
-   RESPONSIVE
-   ========================================= */
-@media (max-width: 900px) {
-  .solution-visual {
+   RESPONSIVO GERAL
+========================================= */
+@media (max-width: 900px){
+
+  .solution-visual{
     grid-template-columns: 1fr;
     gap: 48px;
   }
-  .solution-visual .guide-mockup { order: -1; }
-  .benefits-inner {
+
+  .solution-visual .guide-mockup{
+    order: -1;
+  }
+
+  .benefits-inner{
     grid-template-columns: 1fr;
     gap: 48px;
   }
-  .benefits-visual { display: none; }
-  .offer-box {
+
+  .benefits-visual{
+    display: none;
+  }
+
+  .offer-box{
     grid-template-columns: 1fr;
   }
-  .offer-contents {
+
+  .offer-contents{
     border-right: none;
     border-bottom: 1px solid rgba(255,255,255,.15);
   }
-  .testimonials-videos {
+
+  .testimonials-videos{
     grid-template-columns: 1fr;
   }
-  .objections-grid {
+
+  .objections-grid{
     grid-template-columns: 1fr;
   }
-  .footer-top {
+
+  .footer-top{
     grid-template-columns: 1fr;
     gap: 36px;
   }
+
 }
 
-@media (max-width: 640px) {
-  .hero { padding: 60px 0 80px; }
-  .pain-grid { grid-template-columns: 1fr; }
-  .how-grid { grid-template-columns: 1fr; }
-  .text-testimonials { grid-template-columns: 1fr; }
-  .guarantee-inner {
+/* =========================================
+   CELULAR
+========================================= */
+@media (max-width: 640px){
+
+  html,
+  body{
+    overflow-x: hidden;
+  }
+
+  .hero{
+    padding: 60px 0 80px;
+  }
+
+  .how-grid,
+  .text-testimonials{
+    grid-template-columns: 1fr;
+  }
+
+  .guarantee-inner{
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .guarantee-badge-icon { margin-bottom: 0; }
-  .cta-button { padding: 18px 24px; gap: 10px; }
-  .cta-btn-icon, .cta-btn-arrow { display: none; }
+
+  .guarantee-badge-icon{
+    margin-bottom: 0;
+  }
+
+  .cta-button{
+    padding: 18px 24px;
+    gap: 10px;
+  }
+
+  .cta-btn-icon,
+  .cta-btn-arrow{
+    display: none;
+  }
+
 }
-.testimonial-name {
+
+/* =========================================
+   DEPOIMENTO
+========================================= */
+.testimonial-name{
   display: block;
   margin-bottom: 90px !important;
 }
 
-.pain-grid {
+/* =========================================
+   PAIN SECTION
+========================================= */
+.pain-section{
+  padding: 80px 16px;
+  background: linear-gradient(180deg, #fff7f9 0%, #ffffff 100%);
+}
+
+.pain-grid{
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
-  margin-top: 35px;
-  padding: 0 15px;
+  margin-top: 40px;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .pain-grid {
+/* TABLET */
+@media (min-width: 768px){
+
+  .pain-grid{
     grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
   }
+
 }
 
-.pain-card {
-  background: linear-gradient(135deg, #ff5f6d, #ff9966);
-  color: #fff;
-  padding: 22px 20px;
-  border-radius: 20px;
-  font-size: 1em;
-  line-height: 1.7;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(255, 95, 109, 0.22);
+/* COMPUTADOR */
+@media (min-width: 1100px){
+
+  .pain-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* =========================================
+   CARDS
+========================================= */
+.pain-card{
   position: relative;
   overflow: hidden;
+
   width: 100%;
   box-sizing: border-box;
-  transition: all 0.3s ease;
+
+  padding: 24px 22px;
+
+  border-radius: 22px;
+
+  background: linear-gradient(135deg, #ff5f6d 0%, #ff7b54 100%);
+
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 700;
+
+  box-shadow: 0 12px 30px rgba(255, 95, 109, 0.22);
+
+  transition: all .3s ease;
 }
 
-.pain-card::before {
+/* BOLHA DECORATIVA */
+.pain-card::after{
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: -45px;
+
+  width: 120px;
+  height: 120px;
+
+  background: rgba(255,255,255,0.12);
+
+  border-radius: 50%;
+}
+
+/* ASPAS */
+.pain-card::before{
   content: "“";
   position: absolute;
-  top: -18px;
+
+  top: -15px;
   left: 12px;
-  font-size: 4.5em;
-  opacity: 0.1;
+
+  font-size: 4.5rem;
   font-family: serif;
+
+  color: rgba(255,255,255,0.12);
 }
 
-.pain-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(255, 95, 109, 0.3);
+/* HOVER */
+.pain-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(255, 95, 109, 0.32);
 }
 
-/* Ajuste para celular */
-@media (max-width: 480px) {
-  .pain-card {
-    font-size: 0.95em;
-    padding: 18px 16px;
+/* =========================================
+   TITULOS
+========================================= */
+.pain-section h2{
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 1.35;
+  font-weight: 900;
+  color: #222;
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pain-section p{
+  text-align: center;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* =========================================
+   IMAGEM
+========================================= */
+.pain-image{
+  width: 90%;
+  max-width: 1000px;
+
+  border-radius: 24px;
+
+  display: block;
+  margin: 0 auto;
+
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   CELULAR
+========================================= */
+@media (max-width: 768px){
+
+  .pain-section{
+    padding: 60px 14px;
+  }
+
+  .pain-section h2{
+    font-size: 1.6rem !important;
+    line-height: 1.45;
+    padding: 0 6px;
+  }
+
+  .pain-section p{
+    font-size: 1rem !important;
+    padding: 0 8px;
+  }
+
+  .pain-card{
+    padding: 22px 18px;
     border-radius: 18px;
+
+    font-size: 0.97rem;
     line-height: 1.6;
   }
 
-  .pain-section h2 {
-    font-size: 1.7em !important;
-    padding: 0 10px;
+  /* IMAGEM MAIOR NO CELULAR */
+  .pain-image{
+    width: 118%;
+    max-width: 118%;
+
+    margin-left: -9%;
+
+    border-radius: 18px;
   }
 
-  .pain-section p {
-    font-size: 1.05em !important;
-    padding: 0 10px;
+}
+
+/* =========================================
+   CELULAR PEQUENO
+========================================= */
+@media (max-width: 480px){
+
+  .pain-section h2{
+    font-size: 1.4rem !important;
   }
+
+  .pain-card{
+    font-size: 0.93rem;
+    padding: 20px 16px;
+  }
+
+  .pain-image{
+    width: 122%;
+    max-width: 122%;
+
+    margin-left: -11%;
+  }
+
 }
